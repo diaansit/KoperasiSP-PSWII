@@ -1,0 +1,13 @@
+	$foto_ktp		= $_FILES['foto_ktp'];
+		if($foto_ktp=''){}else{
+			$config['upload_path']	='./assets/foto';
+			$config['allowed_types']='jpg|png|gif';
+			$config['file_name']	=$this->id_anggota;
+
+			$this->load->library('upload',$config);
+			if(!$this->upload->do_upload('foto_ktp')){
+				echo "Upload Gagal"; die();
+			}else{
+				$foto_ktp=$this->upload->data('file_name');
+			}
+		}

@@ -1,0 +1,8 @@
+Panduan Instalasi:
+1. Export database koperasi_db
+
+2. Buka folder application
+
+3. Buka config.php pada folder config, lalo ubah $config['base_url']
+sesuai peletakan folder Koperasi_PSWII07 pada direktori anda
+Misalnya 'http://localhost:8080/psw2/codeigniter/'
